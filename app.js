@@ -49,12 +49,12 @@ window.onload= function validarFormulario(event) {
     if (cvc=="") {
         console.log("tarjeta vacia");
         document.getElementById("cvc").className= "form-control border border-dark-subtle bg-danger opacity-25"
-        
+        displayAlert()
     }
     
     else{
         document.getElementById("cvc").className= "form-control border border-dark-subtle"
-        
+        hideAlert()
     
     }
 
@@ -62,12 +62,12 @@ window.onload= function validarFormulario(event) {
     if (amount=="") {
         console.log("tarjeta vacia");
         document.getElementById("amount").className= "form-control border border-dark-subtle bg-danger opacity-25"
-        
+        displayAlert()
     }
     
     else{
         document.getElementById("amount").className= "form-control border border-dark-subtle"
-        
+        hideAlert()
     
     }
 
@@ -75,12 +75,12 @@ window.onload= function validarFormulario(event) {
     if (firstName=="") {
         console.log("tarjeta vacia");
         document.getElementById("firstName").className= "form-control border border-dark-subtle bg-danger opacity-25"
-        
+        displayAlert()
     }
     
     else{
         document.getElementById("firstName").className= "form-control border border-dark-subtle"
-       
+        hideAlert()
     
     }
 
@@ -88,12 +88,12 @@ window.onload= function validarFormulario(event) {
     if (lastName=="") {
         console.log("tarjeta vacia");
         document.getElementById("lastName").className= "form-control border border-dark-subtle bg-danger opacity-25"
-        
+        displayAlert()
     }
     
     else{
         document.getElementById("lastName").className= "form-control border border-dark-subtle"
-       
+        hideAlert()
     
     }
 
@@ -101,24 +101,24 @@ window.onload= function validarFormulario(event) {
     if (state=="Pick a state") {
         console.log("tarjeta vacia");
         document.getElementById("state").className= "form-select border border-dark-subtle bg-danger opacity-25"
-        
+        displayAlert()
     }
     
     else{
         document.getElementById("state").className= "form-select border border-dark-subtle"
-        
+        hideAlert()
     
     }
     let city= document.getElementById("city").value  
-    if (city=="") {
+    if (city== "") {
         console.log("tarjeta vacia");
         document.getElementById("city").className= "form-control border border-dark-subtle bg-danger opacity-25"
-        
+        hideAlert()
     }
     
     else{
         document.getElementById("city").className= "form-control border border-dark-subtle"
-        
+        displayAlert()
     
     }
 
@@ -126,12 +126,12 @@ window.onload= function validarFormulario(event) {
     if (postalCode=="") {
         console.log("tarjeta vacia");
         document.getElementById("postalCode").className= "form-control border border-dark-subtle bg-danger opacity-25"
-        
+        displayAlert()
     }
     
     else{
         document.getElementById("postalCode").className= "form-control border border-dark-subtle"
-        
+        hideAlert()
     
     }
 
@@ -140,13 +140,13 @@ window.onload= function validarFormulario(event) {
     if (!accept) {
         console.log("input vacio");
         document.getElementById("accept").className= "form-check-input bg-danger opacity-25"
-        
+        displayAlert()
 
     }
     
     else{
         document.getElementById("accept").className= "form-check-input"
-        
+        hideAlert()
     
     }
 
@@ -154,24 +154,24 @@ window.onload= function validarFormulario(event) {
     if (message=="") {
         console.log("tarjeta vacia");
         document.getElementById("message").className= "form-label d-flex justify-content-start bg-danger opacity-25"
-        
+        displayAlert()
     }
     
     else{
         document.getElementById("message").className= "form-label d-flex justify-content-start"
-        
+        hideAlert()
     
     }
     let alerta= document.getElementById("alerta").value  
-    if (alerta=="") {
+    if (alerta== none) {
         console.log("tarjeta vacia");
         document.getElementById("alerta").className= "alert alert-danger d-flex p-2 mt-3 me-4 ms-4 pt-3 pb-3 ps-3 visually-hidden bg-danger opacity-25"
-        
+        displayAlert()
     }
     
     else{
         document.getElementById("alerta").className= "alert alert-danger d-flex p-2 mt-3 me-4 ms-4 pt-3 pb-3 ps-3"
-        
+        hideAlert()
     
     }
 
